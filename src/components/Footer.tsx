@@ -57,7 +57,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-8 text-center">
           <p className="text-xs text-primary-foreground/40 font-sans">
-            © 2026 Selah. All rights reserved. Made with love for the modern believer.
+            © 2026 Veretas Lumina. All rights reserved. Made with love for the modern believer.
           </p>
         </div>
       </div>

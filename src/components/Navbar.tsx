@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
           <BookMarked className="h-7 w-7 text-accent" />
-          <span className="font-serif text-xl font-bold text-foreground tracking-tight">Selah</span>
+          <span className="font-serif text-xl font-bold text-foreground tracking-tight">Veretas Lumina</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
