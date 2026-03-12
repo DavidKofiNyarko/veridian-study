@@ -1,11 +1,11 @@
-import { BookOpen, Headphones, Users, Highlighter, BookMarked, MessageCircle } from "lucide-react";
+import logo from "@/assets/veretas-lumina-logo.png";
 
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-card">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
-          <BookMarked className="h-7 w-7 text-accent" />
+          <img src={logo} alt="Veretas Lumina" className="h-8 w-auto" />
           <span className="font-serif text-xl font-bold text-foreground tracking-tight">Veretas Lumina</span>
         </a>
 

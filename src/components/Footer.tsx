@@ -1,4 +1,4 @@
-import { BookMarked } from "lucide-react";
+import logo from "@/assets/veretas-lumina-logo.png";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <BookMarked className="h-6 w-6 text-accent" />
+              <img src={logo} alt="Veretas Lumina" className="h-7 w-auto brightness-0 invert" />
               <span className="font-serif text-lg font-bold">Veretas Lumina</span>
             </div>
             <p className="text-sm text-primary-foreground/60 font-sans leading-relaxed">
