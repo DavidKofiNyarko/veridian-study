@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Rachel M.",
     role: "Small Group Leader",
-    quote: "Selah has transformed how our small group studies together. The built-in Bible references and discussion features make it so easy to go deeper.",
+    quote: "Veretas Lumina has transformed how our small group studies together. The built-in Bible references and discussion features make it so easy to go deeper.",
     rating: 5,
   },
   {

@@ -1,4 +1,4 @@
-import { BookMarked } from "lucide-react";
+import logo from "@/assets/veretas-lumina-logo.png";
 
 const Footer = () => {
   return (
@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <BookMarked className="h-6 w-6 text-accent" />
-              <span className="font-serif text-lg font-bold">Selah</span>
+              <img src={logo} alt="Veretas Lumina" className="h-7 w-auto brightness-0 invert" />
+              <span className="font-serif text-lg font-bold">Veretas Lumina</span>
             </div>
             <p className="text-sm text-primary-foreground/60 font-sans leading-relaxed">
               A modern reading platform designed for believers who want to go deeper in their faith.
@@ -57,7 +57,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-8 text-center">
           <p className="text-xs text-primary-foreground/40 font-sans">
-            © 2026 Selah. All rights reserved. Made with love for the modern believer.
+            © 2026 Veretas Lumina. All rights reserved. Made with love for the modern believer.
           </p>
         </div>
       </div>
