@@ -1,3 +1,4 @@
+import { BookOpen } from "lucide-react";
 import heroImage from "@/assets/hero-books.jpg";
 
 const HeroSection = () => {
