@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <BookMarked className="h-6 w-6 text-accent" />
-              <span className="font-serif text-lg font-bold">Selah</span>
+              <span className="font-serif text-lg font-bold">Veretas Lumina</span>
             </div>
             <p className="text-sm text-primary-foreground/60 font-sans leading-relaxed">
               A modern reading platform designed for believers who want to go deeper in their faith.
