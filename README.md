@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+# Veretas Lumina
 
-## Project info
+<p align="center">
+  <img src="public/veretas-lumina-logo.png" alt="Veretas Lumina Logo" width="220" />
+</p>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Veretas Lumina is a modern reading and study platform built for believers who want to go deeper in their faith. It combines an immersive Christian book library with interactive Bible references, audio narration, study groups, and community discussions into one beautifully crafted experience.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Immersive Reading** — Distraction-free reading with adjustable fonts, themes, and layouts
+- **Tap Bible Refs** — Interactive Bible references that open instantly in context
+- **Highlights & Notes** — Color-coded highlights and personal notes that sync across devices
+- **Audio Narration** — Professionally narrated audiobooks with synced progress
+- **Study Groups** — Join or create groups to read and discuss together
+- **Community Discussions** — Thoughtful chapter-by-chapter conversations with fellow believers
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Bundler:** Vite 5
+- **UI:** React 18, TypeScript 5
+- **Styling:** Tailwind CSS 3, PostCSS, Autoprefixer
+- **Components:** shadcn/ui, Radix UI, Lucide React
+- **State & Data:** TanStack Query, React Hook Form, Zod
+- **Routing:** React Router DOM 6
+- **Notifications:** Sonner, Toast
+- **Charts:** Recharts
+- **Carousel:** Embla Carousel
+- **Testing:** Vitest, React Testing Library, Playwright
+- **Linting:** ESLint 9
+- **Tooling:** Lovable Tagger
 
-Changes made via Lovable will be committed automatically to this repo.
+## Prerequisites
 
-**Use your preferred IDE**
+- Node.js >= 18.17
+- npm (or your preferred package manager)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Install dependencies
+npm install
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:8080](http://localhost:8080) to view the app.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts
 
-**Use GitHub Codespaces**
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start the development server |
+| `npm run build` | Build for production |
+| `npm run build:dev` | Build in development mode |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run ESLint |
+| `npm run test` | Run unit tests |
+| `npm run test:watch` | Run tests in watch mode |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+  main.tsx              # Application entry point
+  App.tsx               # Root component with routing and providers
+  index.css             # Global styles, theme variables, and custom utilities
+  assets/               # Images and static assets
+  components/
+    ui/                 # shadcn/ui primitives and shared UI components
+    Navbar.tsx          # Top navigation with mobile menu
+    Footer.tsx          # Site footer
+    HeroSection.tsx     # Landing hero
+    FeaturedBooks.tsx   # Book library showcase
+    FeaturesSection.tsx # Platform capabilities grid
+    CommunitySection.tsx# Community engagement
+    AudioSection.tsx    # Audiobook player mockup
+    Testimonials.tsx    # User testimonials
+    CTASection.tsx      # Call-to-action block
+  pages/
+    Index.tsx           # Homepage
+    NotFound.tsx        # 404 fallback
+  hooks/
+    use-toast.ts        # Toast notification hook
+    use-mobile.tsx      # Mobile breakpoint hook
+  lib/
+    utils.ts            # Shared utility helpers
+  test/
+    setup.ts            # Test environment setup
+    example.test.ts     # Sample test file
+public/
+  veretas-lumina-logo.png
+  veretas-lumina-logo.jpg
+  favicon.ico
+  robots.txt
+  placeholder.svg
+```
 
-This project is built with:
+## Routing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage with hero, books, features, community, audio, testimonials, and CTA |
+| `*` | 404 Not Found page |
 
-## How can I deploy this project?
+## Testing
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- **Unit & Integration:** Vitest + React Testing Library
+- **End-to-End:** Playwright
 
-## Can I connect a custom domain to my Lovable project?
+Run tests with `npm run test` or `npm run test:watch`.
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Build the project with `npm run build` and deploy the output `dist/` directory to any static hosting provider (Vercel, Netlify, Cloudflare Pages, etc.).
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Environment Variables
+
+Sensitive configuration is managed via `.env` files. These files are gitignored by default.
